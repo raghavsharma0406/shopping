@@ -1,0 +1,69 @@
+/ecommerce-site
+│
+├── index.html
+├── /assets
+│   ├── logo.png
+│   └── product1.jpg (etc.)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My E-Commerce Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="text-xl font-bold">MyShop</div>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Shop</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Cart (0)</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-100 py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-4">Welcome to MyShop!</h1>
+      <p class="text-lg mb-6">Find the best products at unbeatable prices.</p>
+      <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-6">Featured Products</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <!-- Product Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="assets/product1.jpg" alt="Product 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Product Name</h3>
+            <p class="text-gray-600">$29.99</p>
+            <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Add more product cards as needed -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow mt-16">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-600">
+      &copy; 2025 MyShop. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
